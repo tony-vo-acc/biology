@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Birch Leaf";
+  src: url("fonts/BirchLeaf.woff2") format("woff2"),
+    url("fonts/BirchLeaf.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MS Gothic";
+  src: url("fonts/MSGothic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
