@@ -104,8 +104,9 @@ body {
   margin: 0;
   line-height: 1;
   /* avoid extra vertical space */
-  font-family: "ms gothic", sans-serif;
+  font-family: "MS Gothic", sans-serif;
   font-size: 15px;
+  font-weight: 200;
   /* adjust to taste */
   color: white;
 }
