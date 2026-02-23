@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("sprites/bg.png");
+  background-repeat: repeat;
+}
+
+.container-wrap {
+  position: relative;
+  width: 1000px;
+  margin: 60px auto 0;
+}
+
+/* framed panel */
+.container {
+  display: flex;
+  justify-content: flex-end;
+  /* push content to the right */
+  align-items: flex-start;
+  /* align to top */
+
+  position: relative;
+  width: 800px;
+  height: 500px;
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  background-color: #e8ded3;
+  background-clip: padding-box;
+
+  border: 24px solid transparent;
+  border-image: url("sprites/frame.png") 16 round;
+
+  image-rendering: pixelated;
+  z-index: 1;
+}
+
+
+/* title positioned above and overlapping the frame */
+.title-svg {
+  position: absolute;
+  top: -85px;
+  /* negative pulls it above the frame */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  /* scale title */
+  max-width: 90%;
+  height: auto;
+  z-index: 2;
+  /* ensure it sits above the frame */
+  pointer-events: none;
+}
+
+/* credits bar overlapping the bottom edge */
+.credits-container {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 700px;
+  height: 30px;
+  box-sizing: border-box;
+
+  background-color: #97a06b;
+  background-clip: padding-box;
+
+  border: 12px solid transparent;
+  border-image: url("sprites/title-bar.png") 8 round;
+
+  image-rendering: pixelated;
+}
+
+.credits {
+  margin: 0;
+  line-height: 1;
+  /* avoid extra vertical space */
+  font-family: "ms gothic", sans-serif;
+  font-size: 15px;
+  /* adjust to taste */
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 25px;
+  /* distance from right edge */
+  bottom: -35px;
+  /* distance from bottom edge */
+  z-index: 2;
+  /* above the frame if needed */
+  image-rendering: pixelated;
+  pointer-events: none;
+  /* optional */
+}
+
+/* remove default list padding if needed */
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  /* optional if you don't want bullets */
+}
+
+li {
+  margin: 12px 0;
+  /* space between buttons */
+}
+
+li a {
+  width: 125px;
+  height: 40px;
+  /* keeps 2.5:1 ratio */
+
+  background: url("sprites/rounded-button.png") center / 100% 100% no-repeat;
+  image-rendering: pixelated;
+
+  font-family: "Birch Leaf", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.navbar {
+  margin-top: -45px;
+  margin-right: -125px;
+  /* space from the right border */
+}
