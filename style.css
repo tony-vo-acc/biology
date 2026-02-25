@@ -1,7 +1,14 @@
 @font-face {
   font-family: "Birch Leaf";
-  src: url("fonts/BirchLeaf.woff2") format("woff2"),
-    url("fonts/BirchLeaf.woff") format("woff");
+  src: url("fonts/BirchLeaf.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pix32";
+  src: url("fonts/Pix32.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,15 +16,7 @@
 
 @font-face {
   font-family: "MS Gothic";
-  src: url("fonts/MS-Gothic.woff") format("twoffe");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Alkhemikal";
-  src: url("fonts/Alkhemikal.woff") format("woff");
+  src: url("fonts/MS-Gothic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -112,9 +111,10 @@ body {
   margin: 0;
   line-height: 1;
   /* avoid extra vertical space */
-  font-family: "MS Gothic", sans-serif;
+  font-family: 'Alkhemikal';
   font-size: 15px;
   font-weight: 200;
+  font-style: italic;
   /* adjust to taste */
   color: white;
 }
@@ -141,7 +141,7 @@ ul {
 }
 
 li {
-  margin: 12px 0;
+  margin: 6px 0;
   /* space between buttons */
 }
 
@@ -165,7 +165,157 @@ li a {
 }
 
 .navbar {
-  margin-top: -45px;
+  margin-top: -40px;
   margin-right: -125px;
   /* space from the right border */
+}
+
+.notes-container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -180px;
+  /* adjust to taste */
+  top: 40px;
+  /* adjust to taste */
+}
+
+.box {
+  position: relative;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+
+  /* ✅ correct */
+  background: url("sprites/window-frame.png") center / 100% 100% no-repeat;
+
+  box-sizing: border-box;
+  /* important */
+  padding-top: 30px;
+  padding-left: 13px;
+
+  color: #A89386;
+  font-family: 'MS Gothic';
+  font-size: 16 px;
+
+  z-index: 4;
+}
+
+.box p {
+  width: 95%;
+}
+
+.top {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: none;
+
+  background-color: #97a06b;
+  background-clip: padding-box;
+
+  border: 10px solid transparent;
+  border-image: url("sprites/title-bar.png") 8 round;
+
+  image-rendering: pixelated;
+  z-index: 10;
+}
+
+.window-title {
+  font-family: 'Pix32';
+  color: white;
+  font-size: 13px;
+}
+
+.bullet {
+  filter: sepia(100%) grayscale(20%);
+  width: 16px;
+  image-rendering: pixelated;
+  margin-right: 5px;
+  vertical-align: -2px;
+}
+
+.page {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  height: 85%;
+}
+
+#header-bullet-2 {
+  transform: scaleX(-1);
+}
+
+.page-header {
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  /* stack rows */
+  align-items: center;
+  gap: 4px;
+  font-style: italic;
+  /* vertical spacing control */
+
+  color: #A89386;
+}
+
+/* Row with bullets + title */
+.page-header .header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Header bar image */
+#img-header {
+  width: auto;
+  max-width: 260px;
+  /* tune to match visual width */
+  height: auto;
+  /* no stretching */
+  image-rendering: pixelated;
+  display: block;
+  margin-top: 2px;
+}
+
+.header {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'MS Gothic';
+  color: white;
+  width: 225px;
+  height: 14px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 00%, rgba(151, 160, 107, 1) 25%, rgba(151, 160, 107, 1) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Caption */
+.header-caption {
+  font-family: "MS Gothic";
+  font-size: 12px;
+  color: #A89386;
+  margin-top: 4px;
+}
+
+/* Decorative divider */
+.break {
+  font-family: "MS Gothic";
+  font-size: 16px;
+  color: #9c8b7b;
+  margin-top: 4px;
+  /* tuck divider closer */
+  line-height: 1;
 }
