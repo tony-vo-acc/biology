@@ -18,15 +18,16 @@
 
     <div class="container">
       <ul class="navbar">
-        <li><a class="pill" href="">home</a></li>
-        <li><a class="pill" href="">cryptomycota</a></li>
-        <li><a class="pill" href="">microsporidia</a></li>
-        <li><a class="pill" href="">chytridiomycota</a></li>
-        <li><a class="pill" href="">zoopagomycota</a></li>
-        <li><a class="pill" href="">mucuromycota</a></li>
-        <li><a class="pill" href="">ascomycota</a></li>
-        <li><a class="pill" href="">basidiomycota</a></li>
-        <li><a class="pill" href="">deuteromycete</a></li>
+        <li><a class="pill" data-page="home">home</a></li>
+        <li><a class="pill" data-page="cryptomycota">cryptomycota</a></li>
+        <li><a class="pill" data-page="microsporidia">microsporidia</a></li>
+        <li><a class="pill" data-page="chytridiomycota">chytridiomycota</a></li>
+        <li><a class="pill" data-page="zoopagomycota">zoopagomycota</a></li>
+        <li><a class="pill" data-page="mucuromycota">mucuromycota</a></li>
+        <li><a class="pill" data-page="ascomycota">ascomycota</a></li>
+        <li><a class="pill" data-page="basidiomycota">basidiomycota</a></li>
+        <li><a class="pill" data-page="deuteromycete">deuteromycete</a></li>
+        <li><a class="pill" data-page="citations">citations</a></li>
       </ul>
 
       <div class="notes-container">
@@ -43,27 +44,435 @@
       <div class="page-header">
         <div class="header-row">
           <img class="header-ornament" src="sprites/bullet2.png">
-          <div class="header">home page !!</div>
+          <div class="header" id="pageTitle">cryptomycota</div>
           <img class="header-ornament" src="sprites/bullet2.png" id="header-bullet-2">
         </div>
 
         <img id="img-header" src="sprites/header.png">
 
-        <p class="header-caption">this is what i have right now blah blah blah</p>
-        <p class="break">─── ⋅ ∙ ∘ ☽ ༓ ☾ ∘ ⋅ ⋅ ───</p>
+        <div class="header-optional">
+          <p class="header-caption">this is what i have right now blah blah blah</p>
+          <p class="break">─── ⋅ ∙ ∘ ☽ ༓ ☾ ∘ ⋅ ⋅ ───</p>
+        </div>
       </div>
       <div class="page" id="home">
+        <p class="page-intro">
+          Welcome to <i>Fungal Groups</i>. Use the navigation buttons to explore major fungal groups, how they’re built,
+          how they reproduce, and how they affect ecosystems. This site is styled like a “scanner” interface—each page
+          is a
+          quick field guide with examples and key facts.
+        </p>
 
+        <div class="media-grid">
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Fungi are important decomposers and symbiotic partners in nature, recycling nutrients and supporting
+              plants.
+              Some fungi are also parasites and pathogens that affect crops, animals, and humans.
+            </p>
+            <p style="text-indent: 20px;">
+              Taxonomy changes over time as scientists learn more using DNA evidence. Some groups (like
+              “Deuteromycetes”)
+              are historical categories still used for learning.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="page" id=cryptomycota>
+      <div class="page" id="cryptomycota">
+        <p class="page-intro">
+          Cryptomycota, also known as the <i>hidden fungi</i> due to their tiny size (3–5 μm), are a recently discovered
+          group of microscopic fungi that often live inside other organisms as parasites. Unlike most fungi,
+          Cryptomycota
+          lack chitin cell walls during part of their life cycle and usually do not form large mycelia.
+        </p>
 
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1878614618302186-gr1.jpg" alt="Rozella allomycis">
+              <figcaption><i>Rozella allomycis</i>, a parasitic cryptomycete that infects other fungi.</figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1878614616301192-gr2.jpg"
+                alt="Rozella rhizoclosmatii">
+              <figcaption>A photo of <i>Rozella rhizoclosmatii</i>, a species that infects chytrid fungi.</figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Cryptomycota are commonly found in aquatic and moist environments. In these ecosystems, they act as
+              parasites
+              of other fungi and protists. By infecting organisms, Cryptomycota help regulate microbial populations and
+              contribute to balance within aquatic biomes.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Because Cryptomycota were only discovered recently, much of their life cycle is still being studied.
+              Scientists
+              know they reproduce through spores and likely use both asexual and sexual reproduction, although sexual
+              stages
+              have not yet been fully confirmed. As parasites, their spores infect host cells and develop inside them.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Due to this limited understanding, there are currently no clear human applications for Cryptomycota, and
+              most
+              research focuses on learning more about their biology and evolution.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="microsporidia">
+        <p class="page-intro">
+          Microsporidia are a group of extremely small, single-celled parasites that infect a wide range of animals,
+          including insects, fish, and humans. Because they live and reproduce inside host cells, they have very simple
+          structures compared to most fungi. Despite their small size, Microsporidia can have significant effects on the
+          health of their hosts.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img
+                src="https://www.parasite.org.au/pugh-collection/JpegsStamped/Encephalitozoon%20cuniculi%205%2005.jpg"
+                alt="Encephalitozoon cuniculi under microscope">
+              <figcaption><i>Encephalitozoon cuniculi</i>, a species that mainly infects mammals.</figcaption>
+            </figure>
+
+            <figure class="card">
+              <img
+                src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13071-021-04595-8/MediaObjects/13071_2021_4595_Fig5_HTML.jpg"
+                alt="Nosema bombycis spores">
+              <figcaption>A photo of <i>Nosema bombycis</i>, a species that infects silkworms.</figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Microsporidia produce very resistant spores that contain a specialized structure called a <b>polar
+                tube</b>,
+              which is used to inject their contents into host cells. They mainly reproduce asexually inside host cells,
+              producing large numbers of spores that spread to new hosts. There is evidence that some species may also
+              have
+              sexual stages, although this is still being researched.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Microsporidia infect a wide range of animals, which helps regulate population sizes in natural ecosystems.
+              By acting as parasites, they can influence insect and other small animal populations and affect food webs.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Microsporidia are studied in medicine because some species can infect humans, especially people with
+              weakened
+              immune systems. Research focuses on understanding these infections and developing better treatments rather
+              than traditional antibiotics, since Microsporidia are not bacteria.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="chytridiomycota">
+        <p class="page-intro">
+          Chytridiomycota are mostly aquatic fungi that live in water and moist environments. They are usually
+          unicellular
+          or form simple, thread-like hyphae. Chytrids are unique among fungi because they produce motile, flagellated
+          spores
+          that can swim through water to reach new hosts or food sources.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/CSIRO_ScienceImage_1392_Scanning_Electron_Micrograph_of_Chytrid_Fungus.jpg/250px-CSIRO_ScienceImage_1392_Scanning_Electron_Micrograph_of_Chytrid_Fungus.jpg"
+                alt="Batrachochytrium dendrobatidis under microscope">
+              <figcaption>
+                <i>Batrachochytrium dendrobatidis</i>, a chytrid fungus that causes chytridiomycosis in amphibians.
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://live.staticflickr.com/1098/5149056367_b405b1d4d9_b.jpg"
+                alt="Allomyces macrogynus life stage under microscope">
+              <figcaption>
+                <i>Allomyces macrogynus</i>, an aquatic chytrid fungus with flagellated spores.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Chytridiomycota reproduce asexually by releasing swimming zoospores that move through water to find new
+              hosts
+              or substrates. Many species also reproduce sexually, involving the fusion of cells followed by nuclear
+              fusion,
+              which leads to genetically diverse offspring.
+            </p>
+
+            <p style="text-indent: 20px;">
+              In aquatic ecosystems, chytrids act as decomposers by breaking down dead organic material and recycling
+              nutrients back into the environment. Some species are parasites of algae, protists, and animals, which can
+              influence population sizes and community structure in aquatic environments.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Chytridiomycota are important in research on aquatic ecosystems, disease ecology, and environmental
+              monitoring.
+              Studies of chytrid fungi have helped scientists better understand emerging wildlife diseases and ecosystem
+              health.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZOOPAGOMYCOTA -->
+      <div class="page" id="zoopagomycota">
+        <p class="page-intro">
+          Zoopagomycota are fungi that often live by interacting with animals or other microbes, commonly as parasites
+          or
+          predators of tiny organisms. Many are found in soil or decaying material and can be hard to notice without a
+          microscope.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img src="https://botit.botany.wisc.edu/toms_fungi/images/entclose.jpg" alt="[entomophthora photo]">
+              <figcaption><i>Entomophthora muscae</i>, a fungi that infects houseflies.</figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Basidiobolus_%28257_20%29.jpg"
+                alt="[Basidiobolus ranarum photo]">
+              <figcaption><i>Basidiobolus ranarum</i>, often found in soil/animal-associated habitats.</figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Many Zoopagomycota have simple hyphae and live in close contact with hosts such as insects, small animals,
+              or other microorganisms. Some groups are adapted to attacking prey or surviving inside hosts.
+            </p>
+
+            <p style="text-indent: 20px;">
+              They can reproduce by forming spores, and some lineages have sexual stages that produce durable resting
+              spores.
+              Their exact life cycles vary widely depending on whether they are parasites, predators, or decomposers.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Ecologically, they help control populations of insects and other small organisms and are part of soil and
+              detritus food webs. Some are studied for natural biological control and for understanding fungus–animal
+              interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MUCOROMYCOTA (matches your nav: mucuromycota) -->
+      <div class="page" id="mucuromycota">
+        <p class="page-intro">
+          Mucoromycota include fast-growing molds commonly found in soil, decaying food, and plant material. They are
+          known
+          for fluffy, cotton-like growth and for producing lots of spores.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Structure_of_Rhizopus_spp.-english.JPG"
+                alt="Rhizopus">
+              <figcaption><i>Rhizopus</i>, commonly identified by black mold, is a common fast-growing mold.
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Mucor_racemosus_sporangiophore.jpg"
+                alt="Mucor">
+              <figcaption><i>Mucor racemosus</i>, is a widespread soil/food mold.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Many Mucoromycota form hyphae that are often less “partitioned” (fewer septa) than some other fungi, and
+              they
+              produce sporangia that release large numbers of spores.
+            </p>
+
+            <p style="text-indent: 20px;">
+              They reproduce asexually through spores and can also reproduce sexually by forming tough resting
+              structures
+              (often called zygospores in older textbooks). Sexual reproduction helps them survive harsh conditions.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Ecologically, they are important decomposers that break down dead organic matter and recycle nutrients.
+              Some
+              species are used in food/industry, while others can cause food spoilage or opportunistic infections.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ASCOMYCOTA -->
+      <div class="page" id="ascomycota">
+        <p class="page-intro">
+          Ascomycota are the largest fungal group and include many molds, yeasts, and cup fungi. They are extremely
+          diverse
+          and include important species used in food, medicine, and ecosystems.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/20100911_232323_Yeast_Live.jpg/250px-20100911_232323_Yeast_Live.jpg"
+                alt="Saccharomyces cerevisiae">
+              <figcaption><i>Saccharomyces cerevisiae</i>, more commonly known as yeast, used in bread and fermentation.
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://microbenotes.com/wp-content/uploads/2020/05/Penicillium-chrysogenum-1024x538.jpeg"
+                alt="Penicillium">
+              <figcaption><i>Penicillium</i>, famous for antibiotics and cheese-making (replace image).
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Many Ascomycota form septate hyphae, and some live as single-celled yeasts. Their sexual spores are
+              produced
+              inside sac-like structures called asci (singular: ascus).
+            </p>
+
+            <p style="text-indent: 20px;">
+              They reproduce asexually very commonly (often by conidia or budding in yeasts), and sexually by producing
+              ascospores.
+              This flexibility helps them spread quickly and adapt to changing environments.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Ascomycota include major decomposers and also important symbionts (like many lichens) and plant pathogens.
+              They’re widely used by humans in fermentation, food production, and medicine.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- BASIDIOMYCOTA -->
+      <div class="page" id="basidiomycota">
+        <p class="page-intro">
+          Basidiomycota include many mushrooms, puffballs, shelf fungi, and rusts/smuts. This group is famous for
+          producing
+          large fruiting bodies and for breaking down tough plant material like wood.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/ChampignonMushroom.jpg"
+                alt="Agaricus bisporus">
+              <figcaption><i>Agaricus bisporus</i>, known more commonly as button mushroom, is a common edible mushroom.
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://milnepublishing.geneseo.edu/app/uploads/sites/235/2020/06/image1-2.jpeg"
+                alt="Bracket fungus">
+              <figcaption>Bracket/shelf fung are important wood decomposers.</figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Basidiomycota usually have septate hyphae and often form visible fruiting bodies (mushrooms). Their sexual
+              spores
+              are produced on club-shaped structures called basidia.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Sexual reproduction is a key part of their life cycle, and many have long-lived stages where compatible
+              hyphae
+              share a cell without immediately fusing nuclei. They also reproduce asexually in some cases, depending on
+              species.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Ecologically, Basidiomycota are major decomposers of wood and leaf litter and are important partners in
+              mycorrhizae
+              with plants. They also include plant pathogens (rusts and smuts) that can impact crops.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- DEUTEROMYCETE (historical/educational category) -->
+      <div class="page" id="deuteromycete">
+        <p class="page-intro">
+          “Deuteromycetes” (sometimes called fungi imperfecti) is a historical group used for fungi where no sexual
+          stage was
+          observed. Many of these fungi were later reclassified into Ascomycota or Basidiomycota once their sexual
+          stages
+          were discovered.
+        </p>
+
+        <div class="media-grid">
+          <div class="image-row">
+            <figure class="card">
+              <img
+                src="https://cdn.britannica.com/75/5975-050-6F0083FE/Aspergillus-niger-species-oryze-mold-individuals-pneumonia.jpg"
+                alt="Aspergillus">
+              <figcaption><i>Aspergillus niger</i>, often taught in asexual-form classification.
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/22961-candida-albicans"
+                alt="Candida (replace image)">
+              <figcaption><i>Candida</i>, yeast forms historically grouped by observed stages.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="text-block">
+            <p style="text-indent: 20px;">
+              Structurally, many “deuteromycetes” look like typical molds with septate hyphae and asexual spores
+              (conidia).
+              The label is based on reproduction observations, not true evolutionary relationships.
+            </p>
+
+            <p style="text-indent: 20px;">
+              They reproduce asexually, often by producing conidia. Over time, many were reassigned to modern groups
+              once DNA
+              evidence and sexual stages were identified.
+            </p>
+
+            <p style="text-indent: 20px;">
+              This category is still useful in education and applied fields because many medically or agriculturally
+              important
+              fungi are commonly identified by their asexual forms.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="credits-container">
       <p class="credits">created by: Tony Vo, Alexander Woollard, Emely Quintanilla</p>
     </div>
     <img class="bottom-right" src="sprites/ornament1.png" width="225px" alt="[photo of log with mushrooms]">
+    <img class="bottom-left" src="sprites/bottom-left.png" width="150px">
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
